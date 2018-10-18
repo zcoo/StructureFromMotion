@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SFMClass</class>
+ <widget class="QMainWindow" name="SFMClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>906</width>
+    <height>685</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SFM</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_picture">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>-10</y>
+      <width>431</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_picture">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>171</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>550</y>
+      <width>901</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>906</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_InputPath_3"/>
+    <addaction name="action_ImportCloud"/>
+    <addaction name="separator"/>
+    <addaction name="action_ClearList"/>
+   </widget>
+   <widget class="QMenu" name="menu_sparse">
+    <property name="title">
+     <string>稀疏重建</string>
+    </property>
+    <addaction name="action_InitImage"/>
+    <addaction name="action_ComputeFeatures"/>
+    <addaction name="action_ComputeMatches"/>
+    <addaction name="action_IncrementalSfM"/>
+    <addaction name="action_ComputeDataColor"/>
+    <addaction name="action_OpenMVG2openMVS"/>
+    <addaction name="separator"/>
+    <addaction name="action_Sparse"/>
+   </widget>
+   <widget class="QMenu" name="menu_dense">
+    <property name="title">
+     <string>稠密重建</string>
+    </property>
+    <addaction name="action_DensifyPointCloud"/>
+    <addaction name="action_ReconstructMesh"/>
+    <addaction name="action_RefineMesh"/>
+    <addaction name="action_TextureMesh"/>
+    <addaction name="separator"/>
+    <addaction name="action_Dense"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_sparse"/>
+   <addaction name="menu_dense"/>
+  </widget>
+  <action name="action_InputPath">
+   <property name="text">
+    <string>导入图片集</string>
+   </property>
+  </action>
+  <action name="action_InitImage">
+   <property name="text">
+    <string>初始化图片列表</string>
+   </property>
+  </action>
+  <action name="action_ComputeFeatures">
+   <property name="text">
+    <string>计算特征点</string>
+   </property>
+  </action>
+  <action name="action_ComputeMatches">
+   <property name="text">
+    <string>匹配特征点</string>
+   </property>
+  </action>
+  <action name="action_IncrementalSfM">
+   <property name="text">
+    <string>增量重建</string>
+   </property>
+  </action>
+  <action name="action_GlobalSfM">
+   <property name="text">
+    <string>全局重建</string>
+   </property>
+  </action>
+  <action name="action_ComputeDataColor">
+   <property name="text">
+    <string>结构着色</string>
+   </property>
+  </action>
+  <action name="action_DensifyPointCloud">
+   <property name="text">
+    <string>点云稠密化</string>
+   </property>
+  </action>
+  <action name="action_ReconstructMesh">
+   <property name="text">
+    <string>网格重建</string>
+   </property>
+  </action>
+  <action name="action_RefineMesh">
+   <property name="text">
+    <string>纹理细化</string>
+   </property>
+  </action>
+  <action name="action_TextureMesh">
+   <property name="text">
+    <string>网格纹理化</string>
+   </property>
+  </action>
+  <action name="action_OpenMVG2openMVS">
+   <property name="text">
+    <string>openMVG2openMVS</string>
+   </property>
+  </action>
+  <action name="action_InputPath_2">
+   <property name="text">
+    <string>导入图片集</string>
+   </property>
+  </action>
+  <action name="action_InputPath_3">
+   <property name="text">
+    <string>导入图片集</string>
+   </property>
+  </action>
+  <action name="action_Sparse">
+   <property name="text">
+    <string>稀疏重建</string>
+   </property>
+  </action>
+  <action name="action_Dense">
+   <property name="text">
+    <string>稠密重建</string>
+   </property>
+  </action>
+  <action name="action_ImportCloud">
+   <property name="text">
+    <string>导入点云</string>
+   </property>
+  </action>
+  <action name="action_ClearList">
+   <property name="text">
+    <string>清空输出列表</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="SFM.qrc"/>
+ </resources>
+ <connections/>
+</ui>
